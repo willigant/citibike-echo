@@ -1,0 +1,31 @@
+{
+  "name": "citibike-echo",
+  "version": "0.0.1",
+  "description": "An Amazon echo skill to find the number of bikes at a nearby CitiBike NYC location",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/willigant/citibike-echo"
+  },
+  "author": "willwashburn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willigant/citibike-echo/issues"
+  },
+  "homepage": "https://github.com/willigant/citibike-echo",
+  "dependencies": {
+    "fuzzy": "^0.1.1",
+    "natural": "^0.2.1",
+    "node-lambda": "0.1.5",
+    "numeral": "^1.5.3",
+    "request": "^2.67.0"
+  },
+  "scripts": {
+    "setup": "node-lambda setup",
+    "run": "node-lambda run",
+    "deploy": "node-lambda deploy"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
