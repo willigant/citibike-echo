@@ -61,3 +61,16 @@ test('search citibike station test', function (t) {
 
 });
 
+test('citibike locaition search: Water and Whitehall', function (t) {
+
+    t.plan(1);
+
+    var station = 'water and whitehall plaza';
+
+    citibike.searchForStation(station, function(data){
+        t.equal(534, data.number);
+    },function(){
+        //console.log('Failed. Sucks.');
+    });
+
+});
