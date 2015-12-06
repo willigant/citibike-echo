@@ -23,7 +23,8 @@
   "scripts": {
     "setup": "node-lambda setup",
     "run": "node-lambda run",
-    "deploy": "node-lambda deploy"
+    "deploy": "node-lambda deploy",
+    "test": "node tests/citibike.js"
   },
   "devDependencies": {
     "tape": "^4.2.2"
