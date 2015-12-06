@@ -1,5 +1,6 @@
 .DS_Store
 .env
+deploy.env
 .idea
 event.json
 node_modules
