@@ -15,6 +15,7 @@
   "homepage": "https://github.com/willigant/citibike-echo",
   "dependencies": {
     "fuzzy": "^0.1.1",
+    "geo-nearby": "^1.1.1",
     "node-geocoder": "^3.5.0",
     "node-lambda": "0.1.5",
     "numeral": "^1.5.3",
