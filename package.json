@@ -15,7 +15,6 @@
   "homepage": "https://github.com/willigant/citibike-echo",
   "dependencies": {
     "fuzzy": "^0.1.1",
-    "natural": "^0.2.1",
     "node-lambda": "0.1.5",
     "numeral": "^1.5.3",
     "request": "^2.67.0"

@@ -1,6 +1,5 @@
 var test = require('tape');
 var citibike = require('../lib/citibike')
-var _ = require('underscore')
 
 
 test('search citibike station test', function (t) {
