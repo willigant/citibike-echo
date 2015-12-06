@@ -13,23 +13,30 @@ exports.handler = function (event, context) {
             // figure out how many bikes + docks are there
             var bikes = data.bikes;
             var docks = data.docks;
+            var id = data.id;
+            var timestamp = data.timestamp;
+            var name = data.name;
 
             // return how many bikes and docks there are
             var say =
                 "There are " + bikes + " bikes " +
                 " and " + docks + " docks " +
-                " at " + station
+                " at " + name;
 
             context.succeed(response(say))
+            console.log(say);
+            context.succeed(response(say));
 
         }, function(){
-
-            context.succeed(response('The worst! I don\'t  know where '+ station + ' is!'))
+            // failed request
+            console.log("the worst");
+            context.succeed(response('I am the worst! I don\'t  know where '+ station + ' is!'));
 
         });
     }
     catch (e) {
-        context.succeed(response('Yikes! I don\'t  know where that is!'))
+        console.log(e);
+        context.succeed(response('Yikes! I don\'t  know where that is!'));
     }
 
 }
