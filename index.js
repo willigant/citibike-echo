@@ -23,7 +23,6 @@ exports.handler = function (event, context) {
                 " and " + docks + " docks " +
                 " at " + name;
 
-            context.succeed(response(say))
             console.log(say);
             context.succeed(response(say));
 
