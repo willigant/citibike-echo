@@ -16,10 +16,14 @@
   "dependencies": {
     "fuzzy": "^0.1.1",
     "geo-nearby": "^1.1.1",
+    "geolib": "^2.0.18",
+    "ngeohash": "^0.6.0",
     "node-geocoder": "^3.5.0",
     "node-lambda": "0.1.5",
     "numeral": "^1.5.3",
-    "request": "^2.67.0"
+    "q": "^1.4.1",
+    "request": "^2.67.0",
+    "request-promise": "^1.0.2"
   },
   "scripts": {
     "setup": "node-lambda setup",
