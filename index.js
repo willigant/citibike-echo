@@ -12,7 +12,7 @@ exports.handler = function (event, context) {
 
             // figure out how many bikes + docks are there
             var bikes = data.bikes;
-            var docks = data.docks;
+            var docks = data.bikes + data.free;
             var id = data.id;
             var timestamp = data.timestamp;
             var name = data.name;
@@ -23,7 +23,7 @@ exports.handler = function (event, context) {
                 " and " + docks + " docks " +
                 " at " + name;
 
-            context.succeed(response(say))
+            console.log(data);
             console.log(say);
             context.succeed(response(say));
 
